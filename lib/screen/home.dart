@@ -11,48 +11,15 @@ class Home extends StatelessWidget {
         // mainAxisAlignment: MainAxisAlignment.center,
         // mainAxisAlignment: MainAxisAlignment.end,
         // mainAxisAlignment: MainAxisAlignment.spaceAround,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            color: Colors.redAccent,
-            padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-            child: Text(
-              "Hello World 5",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 3,
-              ),
-            ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 82, 232, 255),
-            padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-            child: Text(
-              "Hello World 5",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 3,
-              ),
-            ),
-          ),
-          Container(
-            color: const Color.fromARGB(255, 82, 255, 91),
-            padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-            child: Text(
-              "Hello World 5",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 3,
-              ),
-            ),
-          ),
+          Image.asset("assets/images/sky.jpg", width: 200, height: 200),
+          SizedBox(height: 20),
+          Image.network(  
+              "https://images.stockcake.com/public/4/7/2/472a5a30-f0c6-485c-ab9c-4dd7cf9d4040_large/sunset-beach-view-stockcake.jpg",
+              width: 200,
+              height: 200),
         ],
     );
   }
